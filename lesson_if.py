@@ -107,7 +107,7 @@
 line1 = input()
 line2 = input()
 def lines(line1, line2):
-    if isinstance(line2, str) and isinstance(line1, str):
+    if isinstance(line2, str) and isinstance(line1, str):   # не работает данный цикл
         print(0)
     elif line1 == line2:
         print(1)
