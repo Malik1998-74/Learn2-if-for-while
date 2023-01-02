@@ -52,10 +52,10 @@ classes = [
     {'name': '3В', 'scores': [4,5,3,5,4]},
 ]
 
-def count_class_avg(student_scores):
+def count_class_avg(student_scores):  # создаем функцию подчет средних отценок класса который принимает параметр оценки студентов
     scores_sum = 0
-    for score in student_scores:
-        scores_sum += score
+    for score in student_scores:  # создаем цикл фор для того чтобы посчитать среднюю оценку 
+        scores_sum += score  # scores_sum = scores_sum + score 
     return scores_sum / len(student_scores)
 
 school_avg_sum = 0
