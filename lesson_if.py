@@ -95,7 +95,7 @@ number_two = input('В Видите второе слово : ')
 def comparison(number_one, number_two):
     if number_one == number_two:
         print(1)
-    elif number_one != number_two and len(number_one) > len(number_two):
+    elif number_one != number_two and len(number_one) > len(number_two):  # не красивый код
         print(2)
     elif number_one != number_two and number_two == 'Learn':
         print(3)
