@@ -89,31 +89,18 @@
 # * Вызвать функцию несколько раз, передавая ей разные праметры 
 #   и выводя на экран результаты
 
-# number_one = input('В видите слово : ')
-# number_two = input('В Видите второе слово : ')
+number_one = input('В видите слово : ')
+number_two = input('В Видите второе слово : ')
 
-# def comparison(number_one, number_two):
-#     if type(number_one) and type(number_two) is not str:
-#         print(0)
-#     elif number_one == number_two:
-#         print(1)
-#     elif number_one != number_two and len(number_one) > len(number_two):
-#         print(2)
-#     elif number_one != number_two and number_two == 'Learn':
-#         print(3)
-
-# comparison(number_one, number_two)
-
-line1 = input()
-line2 = input()
-def lines(line1, line2):
-    if isinstance(line2, str) and isinstance(line1, str):
-        print(0)
-    elif line1 == line2:
+def comparison(number_one, number_two):
+    if number_one == number_two:
         print(1)
-    elif line1 != line2 and len(line1) > len(line2):
+    elif number_one != number_two and len(number_one) > len(number_two):
         print(2)
-    elif line1 != line2 and line2 == 'learn':
+    elif number_one != number_two and number_two == 'Learn':
         print(3)
+    elif isinstance(number_one, str) and isinstance(number_two, str):
+        print(0)
 
-lines(line1, line2)
+comparison(number_one, number_two)
+
